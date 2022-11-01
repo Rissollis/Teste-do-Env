@@ -3,7 +3,8 @@ const app = express();
 require("dotenv").config();
 
 app.get('/', (req, res)=>{
-    res.send(process.env.OLA)
+    res.send(`${process.env.OLA}`)
+
 })
 
 app.listen(3000);
